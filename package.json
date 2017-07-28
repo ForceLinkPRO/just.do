@@ -1,0 +1,24 @@
+{
+  "name": "justdo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForceLinkPRO/just.do.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ForceLinkPRO/just.do/issues"
+  },
+  "homepage": "https://github.com/ForceLinkPRO/just.do#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
