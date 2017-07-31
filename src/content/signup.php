@@ -1,6 +1,4 @@
 <?php
-	include 'header.php';
-
 	$data = $_POST;
 	if( isset($data['do_signup']) )
 	{
@@ -47,31 +45,36 @@
 
 	}
 ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 noRegist text-center">
+			<form action="signup.php" method="POST">
+				
+				<p>
+					<p><strong>Логин</strong>:</p>
+					<input type="text" name="login" required value="<?php echo @$data['login']; ?>">
+				</p>
 
-<form action="signup.php" method="POST">
-	
-	<p>
-		<p><strong>Логин</strong>:</p>
-		<input type="text" name="login" required value="<?php echo @$data['login']; ?>">
-	</p>
+				<p>
+					<p><strong>E-mail</strong>:</p>
+					<input type="email" name="email" required value="<?php echo @$data['email']; ?>">
+				</p>
 
-	<p>
-		<p><strong>E-mail</strong>:</p>
-		<input type="email" name="email" required value="<?php echo @$data['email']; ?>">
-	</p>
+				<p>
+					<p><strong>Пароль</strong>:</p>
+					<input type="password" name="password" required value="<?php echo @$data['password']; ?>">
+				</p>
 
-	<p>
-		<p><strong>Пароль</strong>:</p>
-		<input type="password" name="password" required value="<?php echo @$data['password']; ?>">
-	</p>
+				<p>
+					<p><strong>Пароль</strong>:</p>
+					<input type="password" name="password2" required value="<?php echo @$data['password2']; ?>">
+				</p>
 
-	<p>
-		<p><strong>Введите ваш пароль ещё раз</strong>:</p>
-		<input type="password" name="password2" required value="<?php echo @$data['password2']; ?>">
-	</p>
+				<p>
+					<button class="btn btn-success" type="sumbit" name="do_signup">Зарегистрироваться</button>
+				</p>
 
-	<p>
-		<button type="sumbit" name="do_signup">Зарегистрироваться</button>
-	</p>
-
-</form>
+			</form>
+		</div>
+	</div>
+</div>
